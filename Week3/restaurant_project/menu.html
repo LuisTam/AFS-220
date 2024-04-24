@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Menu</title>
+    <link rel="stylesheet" href=styles.css>
 </head>
 <body>
     <h1>Restaurant Menu</h1>
-    <ul>
-        {% for item in menu_items %}
-            <li>{{ item.name }} - ${{ item.price }}</li>
-            <p>{{ item.description }}</p>
-        {% empty %}
-            <li>No items available</li>
-        {% endfor %}
-    </ul>
+    
+    <h2>Starters</h2>
+<h4>Calamri:$20.00</h4>
+<h4>Nachos: $10.00</h4>
+<h4>Wings:$12.00</h4>
+
+    <h2>Main courses</h2>
+<h4>Tacos: 4 for $10.00</h4>
+<h4>Tomahawk steak:$8.00 per pound</h4>
+
+   
 </body>
 </html>
